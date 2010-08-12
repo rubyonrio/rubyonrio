@@ -12,7 +12,7 @@ $(function() {
     return (num == 1 ? ret : ret + 's')
   }
 
-  var launchDate = new Date('2010-08-14 10:00')
+  var launchDate = new Date(1281790800000)
   var countdown = function(){
     var difference = Math.floor((launchDate - new Date())/1000)
     if (difference < 0) document.location.reload(true)
