@@ -1,5 +1,4 @@
 $(function() {
-
 	$(".tweet").tweet({
 		avatar_size: 32,
     count: 6,
@@ -30,5 +29,4 @@ $(function() {
   }
   countdown()
   setInterval(countdown, 1000)
-
 });
