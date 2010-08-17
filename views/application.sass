@@ -68,12 +68,12 @@ body {
 		  @include grid-unit-base;
 			@include grid-width(4);
 			h1 {
-				margin: 5px 0 15px 0;
+				margin: 15px 0 0 0;
 				font: 60px 'Yanone Kaffeesatz';
 				text-shadow: rgba(200, 200, 200, 1) 0 1px 0px;
 				a {
 					color: #444;
-					&:hover { text-decoration: none; }
+					&:hover { opacity:0.8; filter:alpha(opacity=80) }
 				}
 			}
 		}
@@ -82,7 +82,7 @@ body {
 			@include grid-width(8);
 			ul {
 				float: right;
-				margin: 23px 0 0 0;
+				margin: 47px 0 0 0;
 				li {
 					display: block;
 					float: left;
