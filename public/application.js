@@ -11,10 +11,9 @@ $(document).ready(function() {
     return (num == 1 ? ret : ret + 's')
   }
 
-  var launchDate = new Date(1282186800000)
+  var eventDate = new Date('2010-07-19 19:00')
   var countdown = function(){
-    var difference = Math.floor((launchDate - new Date())/1000)
-    if (difference < 0) document.location.reload(true)
+    var difference = Math.floor((eventDate - new Date())/1000)
     var seconds = difference % 60
     var minutes = Math.floor((difference - seconds)/60) % 60
     var hours = Math.floor((difference - seconds - minutes*60)/60/60) % 24
@@ -23,10 +22,11 @@ $(document).ready(function() {
     if (days > 0) $('#days_count').text(plural(days, 'dia') + ',')
     if (hours > 0) $('#hours_count').text(plural(hours, 'hora') + ',')
     if (minutes > 0) $('#minutes_count').text(plural(minutes, 'minuto') + ' e ')
-    $('#seconds_count').text(plural(seconds, 'segundo'))
+    if (seconds > 0)$('#seconds_count').text(plural(seconds, 'segundo'))
+	else $('#seconds_count').text(plural(0, 'segundo'))
   
     $('#countdown').show()
   }
 
-  setInterval(countdown, 1000)
+  setInterval(countdown(), 1000)
 });
