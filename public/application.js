@@ -11,7 +11,7 @@ $(document).ready(function() {
     return (num == 1 ? ret : ret + 's')
   }
 
-  var eventDate = new Date('2010-07-19 19:00')
+  var eventDate = new Date('2010-08-19 19:00')
   var countdown = function(){
     var difference = Math.floor((eventDate - new Date())/1000)
     var seconds = difference % 60
