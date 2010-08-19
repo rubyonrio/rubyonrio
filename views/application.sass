@@ -44,6 +44,13 @@ $border: 1px solid $border_color;
 	-webkit-box-shadow: 0 1px 1px $color;
 }
 
+@mixin transparent($value) {
+	filter:alpha(opacity=$value);
+	-moz-opacity: $value/100;
+	-khtml-opacity: $value/100;
+	opacity: $value/100;
+}
+
 /* ---- base ---- */
 
 a {
@@ -73,7 +80,7 @@ body {
 				text-shadow: rgba(200, 200, 200, 1) 0 1px 0px;
 				a {
 					color: #444;
-					&:hover { opacity:0.8; filter:alpha(opacity=80) }
+					&:hover { @include transparent(80); }
 				}
 			}
 		}
