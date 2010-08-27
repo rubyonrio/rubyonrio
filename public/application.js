@@ -1,11 +1,11 @@
 $(document).ready(function() {
- /* $(".tweet").tweet({
+  $(".tweet").tweet({
     avatar_size: 32,
     count: 6,
     query: "#rubyonrio",
     loading_text: "carregando tweets..."
   });
-  */
+  
   var plural = function(num, text){
     var ret = num + ' ' + text
     return (num == 1 ? ret : ret + 's')
