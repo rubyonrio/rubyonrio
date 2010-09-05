@@ -7,6 +7,5 @@ Instruções para deploy
 	rackup
 
 Instruções para iniciar em localhost
-
   gem install thin
   thin start
