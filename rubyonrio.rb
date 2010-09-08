@@ -15,4 +15,8 @@ class RubyOnRio < Sinatra::Base
   get '/' do
     haml :index
   end
+  
+  get '/blog' do
+    haml :blog
+  end  
 end
