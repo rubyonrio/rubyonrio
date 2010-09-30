@@ -11,7 +11,7 @@ $(document).ready(function() {
     return (num == 1 ? ret : ret + 's')
   }
 
-  var eventDate = new Date(2010, 08,18, 10, 00, 00)
+  var eventDate = new Date(2010, 09, 23, 10, 00, 00)
   var countdown = function(){
 
     var difference = Math.floor((eventDate - new Date())/1000)
