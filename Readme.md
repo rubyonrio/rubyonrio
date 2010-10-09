@@ -1,0 +1,3 @@
+to start:
+
+$ jekyll --server
