@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+# Blog RubyOnRio no ar
+
+Diretamente do DevInRio, o blog do RubyOnRio entra no ar.
